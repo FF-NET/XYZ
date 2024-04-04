@@ -3,10 +3,9 @@
     "main": "index.html",
     "chromium-args": "--force-color-profile=srgb --disable-devtools",
     "window": {
-        "title": "Hotel Room",
+        "title": "-̶̶•-̶̶•̸Ϟ•̸•••̸Ϟ•̸-̶̶•-̶",
         "width": 435,
         "height": 773,
-        "position": "center",
-        "icon": "icon/icon.png"
+        "position": "center"
     }
 }
