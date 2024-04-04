@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="js/door.js"></script>
 <title>B35.XYZ</title>
 <style>
     body {
@@ -24,6 +23,13 @@
 <body>
 
 <button onclick="eཧ()">立場</button>
-
+<script>
+    var pages = ["༺═──────═༻", "━━━☞", "-̶̶•-̶̶•̸Ϟ•̸•••̸Ϟ•̸-̶̶•-̶"];
+    
+    function eཧ() {
+        var randomIndex = Math.floor(Math.random() * pages.length);
+        window.open(pages[randomIndex], '_blank');
+    }
+    </script>
 </body>
 </html>
