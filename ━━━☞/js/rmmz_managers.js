@@ -1,5 +1,5 @@
 //=============================================================================
-// rmmz_managers.js v1.6.0
+// rmmz_managers.js v1.4.4
 //=============================================================================
 
 //-----------------------------------------------------------------------------
@@ -1961,9 +1961,7 @@ SceneManager.determineRepeatNumber = function(deltaTime) {
 };
 
 SceneManager.terminate = function() {
-    if (Utils.isNwjs()) {
-        nw.App.quit();
-    }
+    window.close();
 };
 
 SceneManager.onError = function(event) {

@@ -1,5 +1,5 @@
 //=============================================================================
-// rmmz_sprites.js v1.6.0
+// rmmz_sprites.js v1.4.4
 //=============================================================================
 
 //-----------------------------------------------------------------------------
@@ -302,10 +302,12 @@ Sprite_Character.prototype.setCharacterBitmap = function() {
 };
 
 Sprite_Character.prototype.updateFrame = function() {
-    if (this._tileId > 0) {
-        this.updateTileFrame();
-    } else {
-        this.updateCharacterFrame();
+    if (this.bitmap.isReady()) {
+        if (this._tileId > 0) {
+            this.updateTileFrame();
+        } else {
+            this.updateCharacterFrame();
+        }
     }
 };
 
@@ -938,7 +940,7 @@ Sprite_Enemy.prototype.initMembers = function() {
     Sprite_Battler.prototype.initMembers.call(this);
     this._enemy = null;
     this._appeared = false;
-    this._battlerName = null;
+    this._battlerName = "";
     this._battlerHue = 0;
     this._effectType = null;
     this._effectDuration = 0;

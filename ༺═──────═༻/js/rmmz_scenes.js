@@ -1,5 +1,5 @@
 //=============================================================================
-// rmmz_scenes.js v1.6.0
+// rmmz_scenes.js v1.4.4
 //=============================================================================
 
 //-----------------------------------------------------------------------------
@@ -345,7 +345,6 @@ Scene_Boot.prototype.resizeScreen = function() {
     const screenWidth = $dataSystem.advanced.screenWidth;
     const screenHeight = $dataSystem.advanced.screenHeight;
     Graphics.resize(screenWidth, screenHeight);
-    Graphics.defaultScale = this.screenScale();
     this.adjustBoxSize();
     this.adjustWindow();
 };
@@ -360,19 +359,10 @@ Scene_Boot.prototype.adjustBoxSize = function() {
 
 Scene_Boot.prototype.adjustWindow = function() {
     if (Utils.isNwjs()) {
-        const scale = this.screenScale();
-        const xDelta = Graphics.width * scale - window.innerWidth;
-        const yDelta = Graphics.height * scale - window.innerHeight;
+        const xDelta = Graphics.width - window.innerWidth;
+        const yDelta = Graphics.height - window.innerHeight;
         window.moveBy(-xDelta / 2, -yDelta / 2);
         window.resizeBy(xDelta, yDelta);
-    }
-};
-
-Scene_Boot.prototype.screenScale = function() {
-    if ("screenScale" in $dataSystem.advanced) {
-        return $dataSystem.advanced.screenScale;
-    } else {
-        return 1;
     }
 };
 
@@ -669,7 +659,7 @@ Scene_Map.prototype.create = function() {
     if (this._transfer) {
         DataManager.loadMapData($gamePlayer.newMapId());
         this.onTransfer();
-    } else {
+    } else if (!$dataMap || $dataMap.id !== $gameMap.mapId()) {
         DataManager.loadMapData($gameMap.mapId());
     }
 };
