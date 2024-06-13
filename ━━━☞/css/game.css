@@ -77,43 +77,32 @@ body {
 #loadingSpinner {
     margin: auto;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 120px;
-    height: 120px;
+    height: 10px; /* 프로그레스 바의 높이 설정 */
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.1); /* 배경색 설정 */
 }
+
 #loadingSpinnerImage {
-    margin: 0px;
-    padding: 0px;
-    border-radius: 50%;
-    width: 96px;
-    height: 96px;
-    border: 12px solid rgba(255, 255, 255, 0.25);
-    border-top: 12px solid rgba(255, 255, 255, 1);
-    animation: fadein 2s ease, spin 1.5s linear infinite;
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff; /* 프로그레스 바의 색상 */
+    animation: progress 2s linear infinite;
 }
-@keyframes fadein {
+
+@keyframes progress {
     0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
+        width: 0%;
     }
     100% {
-        opacity: 1;
+        width: 100%;
     }
 }
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+
 
 #gameCanvas {
     height:100% !important;
