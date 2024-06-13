@@ -1,13 +1,28 @@
+//=============================================================================
+// main.js v1.4.4
+//=============================================================================
+
+const scriptUrls = [
+    "js/libs/pixi.js",
+    "js/libs/pako.min.js",
+    "js/libs/localforage.min.js",
+    "js/libs/effekseer.min.js",
+    "js/libs/vorbisdecoder.js",
+    "js/rmmz_core.js",
+    "js/rmmz_managers.js",
+    "js/rmmz_objects.js",
+    "js/rmmz_scenes.js",
+    "js/rmmz_sprites.js",
+    "js/rmmz_windows.js",
+    "js/plugins.js"
+];
+const effekseerWasmUrl = "js/libs/effekseer.wasm";
+
 class Main {
     constructor() {
         this.xhrSucceeded = false;
         this.loadCount = 0;
         this.error = null;
-        this.scriptUrls = [
-            'url/to/script1.js',
-            'url/to/script2.js',
-            // Add more script URLs as needed
-        ];
     }
 
     run() {
@@ -19,11 +34,10 @@ class Main {
 
     showLoadingSpinner() {
         const loadingSpinner = document.createElement("div");
-        const loadingSpinnerText = document.createElement("div");
+        const loadingSpinnerImage = document.createElement("div");
         loadingSpinner.id = "loadingSpinner";
-        loadingSpinnerText.id = "loadingSpinnerText";
-        loadingSpinnerText.innerText = "b35 입장 중"; // 텍스트 설정
-        loadingSpinner.appendChild(loadingSpinnerText);
+        loadingSpinnerImage.id = "loadingSpinnerImage";
+        loadingSpinner.appendChild(loadingSpinnerImage);
         document.body.appendChild(loadingSpinner);
     }
 
@@ -42,13 +56,15 @@ class Main {
     }
 
     hookNwjsClose() {
+        // [Note] When closing the window, the NW.js process sometimes does
+        //   not terminate properly. This code is a workaround for that.
         if (typeof nw === "object") {
             nw.Window.get().on("close", () => nw.App.quit());
         }
     }
 
     loadMainScripts() {
-        for (const url of this.scriptUrls) {
+        for (const url of scriptUrls) {
             const script = document.createElement("script");
             script.type = "text/javascript";
             script.src = url;
@@ -59,7 +75,7 @@ class Main {
             script._url = url;
             document.body.appendChild(script);
         }
-        this.numScripts = this.scriptUrls.length;
+        this.numScripts = scriptUrls.length;
         window.addEventListener("load", this.onWindowLoad.bind(this));
         window.addEventListener("error", this.onWindowError.bind(this));
     }
@@ -115,6 +131,8 @@ class Main {
     }
 
     isPathRandomized() {
+        // [Note] We cannot save the game properly when Gatekeeper Path
+        //   Randomization is in effect.
         return (
             typeof process === "object" &&
             process.mainModule.filename.startsWith("/private/var")
@@ -139,3 +157,5 @@ class Main {
 
 const main = new Main();
 main.run();
+
+//-----------------------------------------------------------------------------

@@ -75,24 +75,38 @@ body {
     text-align: right;
 }
 #loadingSpinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 120px;
     height: 120px;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.5); /* 배경을 추가해서 텍스트가 잘 보이게 함 */
-    border-radius: 10px; /* 모서리 둥글게 */
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingSpinnerImage {
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    border: 12px solid rgba(255, 255, 255, 0.25);
+    border-top: 12px solid rgba(255, 255, 255, 1);
+    animation: spin 1.5s linear infinite;
 }
 
 #loadingSpinnerText {
-    color: white; /* 텍스트 색상 */
-    font-size: 16px; /* 텍스트 크기 */
-    font-weight: bold; /* 텍스트 굵기 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
 }
 
 @keyframes fadein {
@@ -116,6 +130,6 @@ body {
 }
 
 #gameCanvas {
-    height: 100% !important;
-    width: auto !important;
+    height:100% !important;
+    width:auto !important;
 }
