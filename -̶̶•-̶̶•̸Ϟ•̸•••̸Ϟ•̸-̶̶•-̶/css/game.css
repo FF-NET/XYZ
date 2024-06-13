@@ -77,24 +77,38 @@ body {
 #loadingSpinner {
     margin: auto;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 120px;
     height: 120px;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #loadingSpinnerImage {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border-radius: 50%;
     width: 96px;
     height: 96px;
     border: 12px solid rgba(255, 255, 255, 0.25);
     border-top: 12px solid rgba(255, 255, 255, 1);
-    animation: fadein 2s ease, spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
 }
+
+#loadingSpinnerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+}
+
 @keyframes fadein {
     0% {
         opacity: 0;
@@ -117,4 +131,5 @@ body {
 
 #gameCanvas {
     height:100% !important;
+    width:auto !important;
 }
