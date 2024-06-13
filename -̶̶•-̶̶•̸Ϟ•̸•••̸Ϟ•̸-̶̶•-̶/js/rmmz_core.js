@@ -607,13 +607,16 @@ Graphics.startLoading = function() {
  * @returns {boolean} True if the loading spinner was active.
  */
 Graphics.endLoading = function() {
-    if (document.getElementById("loadingSpinner")) {
+    // 체크: _loadingSpinner가 DOM에 있는지 확인
+    if (this._loadingSpinner && this._loadingSpinner.parentNode) {
         document.body.removeChild(this._loadingSpinner);
         return true;
     } else {
+        console.warn("Loading spinner not found or already removed in Graphics.endLoading");
         return false;
     }
 };
+
 
 /**
  * Displays the error text to the screen.

@@ -1,23 +1,3 @@
-//=============================================================================
-// main.js v1.4.4
-//=============================================================================
-
-const scriptUrls = [
-    "js/libs/pixi.js",
-    "js/libs/pako.min.js",
-    "js/libs/localforage.min.js",
-    "js/libs/effekseer.min.js",
-    "js/libs/vorbisdecoder.js",
-    "js/rmmz_core.js",
-    "js/rmmz_managers.js",
-    "js/rmmz_objects.js",
-    "js/rmmz_scenes.js",
-    "js/rmmz_sprites.js",
-    "js/rmmz_windows.js",
-    "js/plugins.js"
-];
-const effekseerWasmUrl = "js/libs/effekseer.wasm";
-
 class Main {
     constructor() {
         this.xhrSucceeded = false;
@@ -42,11 +22,9 @@ class Main {
         document.body.appendChild(loadingSpinner);
     }
 
+    // `eraseLoadingSpinner` 함수는 이제 `Graphics.endLoading`을 호출합니다.
     eraseLoadingSpinner() {
-        const loadingSpinner = document.getElementById("loadingSpinner");
-        if (loadingSpinner) {
-            document.body.removeChild(loadingSpinner);
-        }
+        Graphics.endLoading();
     }
 
     testXhr() {
