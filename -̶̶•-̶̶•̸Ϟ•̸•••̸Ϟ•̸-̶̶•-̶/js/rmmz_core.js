@@ -900,12 +900,17 @@ Graphics._updateVideo = function() {
 
 Graphics._createLoadingSpinner = function() {
     const loadingSpinner = document.createElement("div");
-    const loadingSpinnerImage = document.createElement("div");
+    const loadingSpinnerText = document.createElement("div"); // 추가한 부분: 텍스트 요소 생성
     loadingSpinner.id = "loadingSpinner";
+    loadingSpinnerText.id = "loadingSpinnerText"; // 추가한 부분: 텍스트 요소의 id 설정
+    loadingSpinnerText.innerText = "b35 로딩중"; // 추가한 부분: 텍스트 설정
+    loadingSpinner.appendChild(loadingSpinnerText); // 추가한 부분: 텍스트 요소를 스피너에 추가
+    const loadingSpinnerImage = document.createElement("div");
     loadingSpinnerImage.id = "loadingSpinnerImage";
     loadingSpinner.appendChild(loadingSpinnerImage);
     this._loadingSpinner = loadingSpinner;
 };
+
 
 Graphics._createFPSCounter = function() {
     this._fpsCounter = new Graphics.FPSCounter();
