@@ -3,6 +3,11 @@ class Main {
         this.xhrSucceeded = false;
         this.loadCount = 0;
         this.error = null;
+        this.scriptUrls = [
+            'url/to/script1.js',
+            'url/to/script2.js',
+            // Add more script URLs as needed
+        ];
     }
 
     run() {
@@ -22,9 +27,11 @@ class Main {
         document.body.appendChild(loadingSpinner);
     }
 
-    // `eraseLoadingSpinner` 함수는 이제 `Graphics.endLoading`을 호출합니다.
     eraseLoadingSpinner() {
-        Graphics.endLoading();
+        const loadingSpinner = document.getElementById("loadingSpinner");
+        if (loadingSpinner) {
+            document.body.removeChild(loadingSpinner);
+        }
     }
 
     testXhr() {
@@ -41,7 +48,7 @@ class Main {
     }
 
     loadMainScripts() {
-        for (const url of scriptUrls) {
+        for (const url of this.scriptUrls) {
             const script = document.createElement("script");
             script.type = "text/javascript";
             script.src = url;
@@ -52,7 +59,7 @@ class Main {
             script._url = url;
             document.body.appendChild(script);
         }
-        this.numScripts = scriptUrls.length;
+        this.numScripts = this.scriptUrls.length;
         window.addEventListener("load", this.onWindowLoad.bind(this));
         window.addEventListener("error", this.onWindowError.bind(this));
     }
