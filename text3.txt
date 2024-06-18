@@ -1,0 +1,12 @@
+[bgm]https://file.notion.so/f/f/bba3d030-290e-48aa-83de-08f5763b2536/b51cbe89-313e-4606-8053-612764beaf15/weB-10.mp3?id=14baa15d-8f40-4b53-8bf7-883ab577ff5e&table=block&spaceId=bba3d030-290e-48aa-83de-08f5763b2536&expirationTimestamp=1718820000000&signature=XSOo7E4pXZ1fXxUROSKBD66QBQvbql1l9Dsx0lp98W8&downloadName=weB-10.mp3[/bgm]
+[background img]https://github.com/FF-NET/XYZ/blob/main/-%CC%B6%CC%B6%E2%80%A2-%CC%B6%CC%B6%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8%E2%80%A2%E2%80%A2%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8-%CC%B6%CC%B6%E2%80%A2-%CC%B6/img/parallaxes/talk%2002-1.png?raw=true[/background img]
+[textbox img]https://github.com/FF-NET/XYZ/blob/main/-%CC%B6%CC%B6%E2%80%A2-%CC%B6%CC%B6%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8%E2%80%A2%E2%80%A2%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8-%CC%B6%CC%B6%E2%80%A2-%CC%B6/img/pictures/text%20bar1.png?raw=true[/textbox img]
+[name field] [/name field]
+
+[text field]
+제가 당신에게 사람들이 잘못하고, <br>스스로를 위로하고, 
+단지 그것에 대해 생각하지 않기 위해 <br>긍정적인 말을 하는 것이<br>제 취미라고 말했나요? 
+저는 기억력이 나쁜 사람들이 부럽습니다.<br>매일 재설정되는 것 같아요. 
+업데이트는 빠르고 <br>새로운 것도 빨리 받을 수 있습니다. 
+받을 수 있다니까요?
+[/text field]
