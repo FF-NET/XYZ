@@ -1,7 +1,7 @@
 [bgm]https://file.notion.so/f/f/bba3d030-290e-48aa-83de-08f5763b2536/b51cbe89-313e-4606-8053-612764beaf15/weB-10.mp3?id=14baa15d-8f40-4b53-8bf7-883ab577ff5e&table=block&spaceId=bba3d030-290e-48aa-83de-08f5763b2536&expirationTimestamp=1718820000000&signature=XSOo7E4pXZ1fXxUROSKBD66QBQvbql1l9Dsx0lp98W8&downloadName=weB-10.mp3[/bgm]
 [background img]https://github.com/FF-NET/XYZ/blob/main/-%CC%B6%CC%B6%E2%80%A2-%CC%B6%CC%B6%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8%E2%80%A2%E2%80%A2%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8-%CC%B6%CC%B6%E2%80%A2-%CC%B6/img/parallaxes/talk%2002-1.png?raw=true[/background img]
 [textbox img]https://github.com/FF-NET/XYZ/blob/main/-%CC%B6%CC%B6%E2%80%A2-%CC%B6%CC%B6%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8%E2%80%A2%E2%80%A2%E2%80%A2%CC%B8%CF%9E%E2%80%A2%CC%B8-%CC%B6%CC%B6%E2%80%A2-%CC%B6/img/pictures/text%20bar1.png?raw=true[/textbox img]
-[name field] [/name field]
+[name field] 노만 폴란스키 [/name field]
 
 [text field]
 제가 당신에게 사람들이 잘못하고, <br>스스로를 위로하고, 
