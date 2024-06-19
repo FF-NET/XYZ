@@ -1,0 +1,16 @@
+[bgm]https://b35.xyz/soundtrack/weB-17.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field]김정각[/name field]
+
+[text field]
+방법이야 없지 않겠지만 
+옳은 방법일지는 모르겠다.<br>
+다만 어쨌거나 본격적인 이야기를 토대로 
+부분부분 게임을 추가하고 
+아에 마을 시스템이 있어서<br>
+계속 사용하면서 진행하는 
+풀 스토리의 RPG게임을 할 수 있기 때문에 
+장단이 크다고 생각한다.<br>
+<e=></e>
+[/text field]

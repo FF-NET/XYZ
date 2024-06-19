@@ -1,0 +1,16 @@
+[bgm]https://b35.xyz/soundtrack/weB-15.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field]김정각[/name field]
+
+[text field]
+역시나 재미를 준다면, 다른사람이 되버린 것이다. 
+누군가와 내가 바뀐 것이다. 아 내가 아닌데? <br>
+이게 내가 아닌데 기억 찾기에 오류인지 
+모두가 나를 그 사람이라고 인식한다. <br>
+어떻게 진짜 나를 찾을 수 있을까? 
+또 진짜 내가 되어 살아가고 있는 사람은 누구일까? <br>
+일단 내가 알고 있는 정보로 
+이 기억과 꼭 맞는 사람을 찾아야한다.<br>
+<e=></e>
+[/text field]

@@ -1,0 +1,19 @@
+[bgm]https://b35.xyz/soundtrack/weB-14.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field]김정각[/name field]
+
+[text field]
+이런 식으로 퀘스트나 상점, 아이템 들이 생기면 
+이제 단순히 텍스트를 수용하고 관람하는 형태에서 <br>
+무엇인가 선택하는 형식이 첨부되어야 한다. 
+하지만 매력적인 이미지와 텍스트의 인물들이 
+무엇인가 부탁을 요청하거나 부탁을 할때 <br>
+그것이 큰 사건이나 퀘스트가 아니지만 
+텍스트로 말미함아 무엇이 더 진전되고 
+나아갈 것이라는 호기심을 자극하고 <br>
+새로고침을 반복적으로 해서 
+퀘스트 달성을 하고자 하는 욕구를 <br>
+자극 시킬 수 있다고 본다. <br>
+<e=></e>
+[/text field]
