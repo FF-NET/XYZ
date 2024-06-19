@@ -1,0 +1,16 @@
+[bgm]https://b35.xyz/soundtrack/weB-13.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field]김정각[/name field]
+
+[text field]
+지속 반복 플레이를 유도하기 위해서 
+일종의 퀘스트를 부여하고 클리어하기 위해서
+ 계속 새로고침을 유도하는 것을 어떨까? <br>
+기존의 제공되는 우리의 이미지와 텍스트에서 선택을 하고
+골드를 얻는 다던지 등등을 통해서 계속 반복할 수록 
+재화가 쌓여서 구입도 되고 그러면<br> 
+어떤 누구에게는 재화를 통해 얻은 것을 
+구입하여 다시 만나게되면 전달도 할 수 있는 시스템.<br>
+<e=></e>
+[/text field]

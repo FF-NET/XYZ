@@ -1,0 +1,18 @@
+[bgm]https://b35.xyz/soundtrack/weB-4.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_02-1.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field]고추국(髙鄒國) / 탐모라국 (985년)[/name field]
+
+[text field]
+바람 기억나? 
+혀를 내밀기만 해도 짜요. <br>
+당신은 우리 오빠를 닮았어요. 
+바람 기억나? <br>
+잿빛 구름은 비를 따라 달리는 풀밭에 
+내 다리를 저리게 했다. 내가 승려처럼 보이나요? <br>
+이거 돌하르방 같지 않아요? 
+네, 체스에서 말씀드렸듯이 저는 몽골 사람입니다. <br>
+바람 같았어요. 너무 빨라. 
+말 한 마리를 가져다 주시겠어요?<br>
+<e=></e>
+[/text field]

@@ -1,0 +1,17 @@
+[bgm]https://b35.xyz/soundtrack/weB-7.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field][/name field]
+
+[text field]
+보이지 않는 곳에 적들이 숨어있어. 
+지금도. 알지? <br>
+당연히도 네가 보고있는 시야의 끝에 
+그 사이에 모두 잠복하고 있어. <br>
+네 주변도 그래. 감시당하고 있어. 
+고개 돌리면 보일지도 몰라. 의식하고 있다는 것을 알리면 위험해. <br>
+움직이지 말고 내 말 잘들어. 이곳을 떠나. 
+여긴 위험해. 네가 알던 고향은 사라졌어. <br>
+미안해. 이렇게 되어 버려서.<br>
+<e=></e>
+[/text field]

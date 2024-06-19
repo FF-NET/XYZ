@@ -1,0 +1,15 @@
+[bgm]https://b35.xyz/soundtrack/weB-12.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field][/name field]
+
+[text field]
+때때로 나는 내 인생이 
+누군가가 만든 게임이나 문학작품이라고 생각한다. <br>
+나의 결점은 겉에서 기인한 것입니다. 
+그것은 제 의지와는 아무 상관이 없어요. <br>
+주근깨가 울리는 자리에서 고개를 숙여야 한다면 슬플 것이다. 
+친구여, 내가 당신과 함께 달리던 해변에서 우리의 발이, <br>
+발이 너무 커졌어요. 못났어요. <br>
+<e=></e>
+[/text field]

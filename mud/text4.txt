@@ -1,0 +1,18 @@
+[bgm]https://b35.xyz/soundtrack/weB-6.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field][/name field]
+
+[text field]
+삶은 보너스 게임이라고 하잖아. 
+보너스는 상여금, 특별 수당, 위로금, 퇴직금. · 장려상, 보상 물자. · <br>
+기대했던 것보다 좋은 것. 이라는 뜻을 가지고 있어. 
+너에게 삶은 어떤 의미의 보너스 일까? <br>
+아마도 나의 삶이 진짜가 아니라는 건 분명해. 
+나도 보너스 받게될 날이 오겠지. <br>
+어쩌면 이미 받아서 다 써버리곤, 
+다시 획득하고 있는지도 모르겠어. <br>
+너도 잘 즐겨! 언젠가 다시 획득하기 위해 노력하고 있을거야. 
+너도 모르게.<br>
+<e=></e>
+[/text field]

@@ -1,0 +1,15 @@
+[bgm]https://b35.xyz/soundtrack/weB-3.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field]아타왈파 / 인카제국 (1572년)[/name field]
+
+[text field]
+스페인 사람들과 달리 
+우리는 살 길이 없기 때문에 협상을 했습니다.<br>
+자신에게 불리하게 살해된 
+다른 종교인의 이름으로 팔려나간 
+달의 신이 어둠과 잉카제국의 교류 장소가 되었기 때문일까요.<br>
+어둠을 볼 때마다 금이 떠올라요. 
+어둠을 볼 때마다 그 생각이 납니다. 무엇일까요?<br>
+<e=></e>
+[/text field]

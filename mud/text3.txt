@@ -1,0 +1,17 @@
+[bgm]https://b35.xyz/soundtrack/weB-5.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field][/name field]
+
+[text field]
+닭이 먼저냐 알이 먼저냐? 
+컴퓨터가 먼저냐 인공지능이 먼저냐? <br>
+가상현실이 먼저냐? 가상현실을 알아차리는게 먼저냐? 
+가상현실 안에서 만든 가상현실이 먼저냐? <br>
+아니면 가상현실을 만든 가상현실이 먼저냐? 
+어쨌거나 우리가 존재하는 건 
+세상이 각자의 세상이 중심이라고 생각하기 때문이야. <br>
+모르는게 먼저냐? 아는게 먼저냐? 
+모르는게 약! 너네 세상에선 이게 귀한 말로 여긴다면서..<br>
+<e=></e>
+[/text field]

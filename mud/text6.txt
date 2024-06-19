@@ -1,0 +1,17 @@
+[bgm]https://b35.xyz/soundtrack/weB-8.mp3[/bgm]
+[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
+[name field][/name field]
+
+[text field]
+내 마지막 직업은 관광버스기사 였습니다. 
+실은 대부분 동반자살카페에서 만난 
+중년과 노년의 사람들이었습니다. <br>
+그들을 살리기 위해 음악을 선곡하고 분위기를 만들어 냈습니다. 
+추임새가 중요하죠. 밀고 당기고 만지고 밀쳐내고, <br>
+삶을 추행하는 것 입니다. 일종의 변곡을 만들기 위해서죠. 
+처음으로 춤을 추는 이들의 몸짓을 본 적 있습니까? <br>
+그건 태어나 처음으로 석양을 바라보는 것과 같습니다. 
+눈이 부시죠. 그래서 선글라스를 쓰는 겁니다.<br>
+<e=></e>
+[/text field]
