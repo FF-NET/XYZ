@@ -1,5 +1,5 @@
 [bgm]https://b35.xyz/soundtrack/weB-5.mp3[/bgm]
-[background img]https://b35.xyz/webgl_resources/talk_012.png[/background img]
+[background img]https://b35.xyz/mudimg/mudimg3.png[/background img]
 [textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
 [name field][/name field]
 
