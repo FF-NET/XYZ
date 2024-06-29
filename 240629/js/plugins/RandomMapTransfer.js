@@ -20,7 +20,7 @@
     'use strict';
 
     // 제외할 맵 ID를 정의합니다. 예를 들어, 맵 ID 9를 제외합니다.
-    const excludedMapIds = [9, 19, 20, 21, 22];
+    const excludedMapIds = [9, 19, 20, 21,];
 
     // RPG Maker MZ의 데이터 파일에서 모든 맵 ID를 가져옵니다.
     function getAllMapIds() {
