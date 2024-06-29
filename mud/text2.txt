@@ -1,5 +1,5 @@
 [bgm]https://b35.xyz/soundtrack/weB-4.mp3[/bgm]
-[background img]https://b35.xyz/webgl_resources/talk_02-1.png[/background img]
+[background img]https://b35.xyz/mudimg/mudimg2.png[/background img]
 [textbox img]https://b35.xyz/webgl_resources/textbox1.png[/textbox img]
 [name field]고추국(髙鄒國) / 탐모라국 (985년)[/name field]
 
