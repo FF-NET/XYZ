@@ -65,37 +65,7 @@
 	});
 </script>
 
- <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Create an AudioContext
-            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-            // Create an empty buffer
-            const buffer = audioContext.createBuffer(1, audioContext.sampleRate * 1, audioContext.sampleRate);
-            const data = buffer.getChannelData(0);
-            for (let i = 0; i < data.length; i++) {
-                data[i] = Math.random() * 2 - 1;  // Fill the buffer with white noise
-            }
-
-            // Create a buffer source
-            const source = audioContext.createBufferSource();
-            source.buffer = buffer;
-            source.loop = true;
-
-            // Connect the source to the audio context's destination (the speakers)
-            source.connect(audioContext.destination);
-
-            // Start the source playing
-            source.start();
-
-            // Set the audio context to active
-            audioContext.resume().then(() => {
-                console.log('Playback started');
-            }).catch((error) => {
-                console.error('Error resuming audio context:', error);
-            });
-        });
-    </script>
 
 <html>
     <head>
