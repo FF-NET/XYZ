@@ -89,6 +89,14 @@
                 padding: 10px 20px;
                 border-radius: 5px;
                 display: none; /* 초기에는 숨김 */
+                animation: fadeInOut 5s ease; /* fade-in, fade-out 애니메이션 적용 */
+            }
+    
+            @keyframes fadeInOut {
+                0% { opacity: 0; }
+                10% { opacity: 1; }
+                90% { opacity: 1; }
+                100% { opacity: 0; }
             }
         </style>
         
