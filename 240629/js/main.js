@@ -42,6 +42,7 @@ class Main {
         const textElement = document.createElement("div");
         textElement.textContent = "무음 모드를 해제해 주세요";
         textElement.style.fontSize = "16px"; // 원하는 스타일을 설정하세요
+        textElement.style.color = "white"; // 텍스트 색상을 흰색으로 설정
     
         // loadingSpinner에 요소 추가
         loadingSpinner.appendChild(textElement);
