@@ -104,6 +104,12 @@
             if (typeof AudioManager !== 'undefined' && AudioManager._context) {
                 AudioManager._context.resume().then(() => {
                     console.log('Game audio resumed');
+                    
+                    // 특정 사운드를 재생하여 오디오 시스템이 활성화되었는지 확인
+                    const buffer = AudioManager.createBuffer('se', 'Decision1');  // 'Decision1'은 RPG Maker MZ 기본 사운드 중 하나
+                    if (buffer) {
+                        buffer.play(false);
+                    }
                 }).catch((error) => {
                     console.error('Error resuming game audio:', error);
                 });
