@@ -18,19 +18,6 @@ const scriptUrls = [
 ];
 const effekseerWasmUrl = "js/libs/effekseer.wasm";
 
-// main.js에서 필요한 작업을 수행
-document.addEventListener('DOMContentLoaded', function() {
-    // 이 곳에 main.js에서 필요한 기능을 추가
-    console.log('main.js가 로드되었습니다.');
-
-    // 매너모드 텍스트의 페이드 아웃을 위한 setTimeout 사용
-    setTimeout(function() {
-        var mannertext = document.getElementById('mannermodeText');
-        mannertext.style.opacity = 0;
-    }, 4500); // 4500밀리초 = 4.5초
-});
-
-
 class Main {
     constructor() {
         this.xhrSucceeded = false;
