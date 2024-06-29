@@ -65,37 +65,37 @@
 	});
 </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Create an AudioContext
-        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create an AudioContext
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-        // Create an empty buffer
-        const buffer = audioContext.createBuffer(1, audioContext.sampleRate * 1, audioContext.sampleRate);
-        const data = buffer.getChannelData(0);
-        for (let i = 0; i < data.length; i++) {
-            data[i] = Math.random() * 2 - 1;  // Fill the buffer with white noise
-        }
+            // Create an empty buffer
+            const buffer = audioContext.createBuffer(1, audioContext.sampleRate * 1, audioContext.sampleRate);
+            const data = buffer.getChannelData(0);
+            for (let i = 0; i < data.length; i++) {
+                data[i] = Math.random() * 2 - 1;  // Fill the buffer with white noise
+            }
 
-        // Create a buffer source
-        const source = audioContext.createBufferSource();
-        source.buffer = buffer;
-        source.loop = true;
+            // Create a buffer source
+            const source = audioContext.createBufferSource();
+            source.buffer = buffer;
+            source.loop = true;
 
-        // Connect the source to the audio context's destination (the speakers)
-        source.connect(audioContext.destination);
+            // Connect the source to the audio context's destination (the speakers)
+            source.connect(audioContext.destination);
 
-        // Start the source playing
-        source.start();
+            // Start the source playing
+            source.start();
 
-        // Set the audio context to active
-        audioContext.resume().then(() => {
-            console.log('Playback started');
-        }).catch((error) => {
-            console.error('Error resuming audio context:', error);
+            // Set the audio context to active
+            audioContext.resume().then(() => {
+                console.log('Playback started');
+            }).catch((error) => {
+                console.error('Error resuming audio context:', error);
+            });
         });
-    });
-</script>
+    </script>
 
 <html>
     <head>
@@ -107,75 +107,11 @@
         <link rel="apple-touch-icon" href="icon/icon.png">
         <link rel="stylesheet" type="text/css" href="css/game.css">
         <title>B-35</title>
-        <style>
-            /* 스타일 설정 */
-            #startButton {
-                position: fixed;
-                bottom: 10px;
-                left: 10px;
-                padding: 10px 20px;
-                font-size: 16px;
-                background-color: #4CAF50; /* 버튼 배경색 */
-                color: white; /* 버튼 텍스트 색 */
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                z-index: 1000; /* 버튼을 다른 요소들 위에 표시 */
-            }
-        </style>
         
     </head>
     <body style="background-color: black">
         
         <script type="text/javascript" src="js/main.js"></script>
-        <!-- 사운드 시작 버튼 -->
-    <button id="startButton">Sound</button>
-    <script>
-        var context = new (window.AudioContext || window.webkitAudioContext)();
-        var soundBuffer = null;
-
-        function loadSound(url) {
-            var request = new XMLHttpRequest();
-            request.open('GET', url, true);
-            request.responseType = 'arraybuffer';
-
-            // Decode asynchronously
-            request.onload = function() {
-                context.decodeAudioData(request.response, function(buffer) {
-                    soundBuffer = buffer;
-                }, function(error) {
-                    console.error('Error decoding audio data:', error);
-                });
-            }
-            request.send();
-        }
-
-        function playSound() {
-            var source = context.createBufferSource();
-            source.buffer = soundBuffer;
-            source.connect(context.destination);
-            source.start(0);
-        }
-
-        document.getElementById('startButton').addEventListener('click', function() {
-            // Load a sound file from your RPG Maker MZ project's audio folder
-            loadSound('audio/se/OK.ogg'); // 예제: RPG Maker MZ의 기본 사운드 파일 경로
-
-            // Once the sound is loaded, play it
-            context.resume().then(() => {
-                if (soundBuffer) {
-                    playSound();
-                } else {
-                    console.log('Sound buffer is not yet loaded.');
-                }
-            }).catch((error) => {
-                console.error('Error resuming audio context:', error);
-            });
-
-            // Hide the start button after it's clicked
-            this.style.display = 'none';
-        });
-    </script>
     </body>
 
 </html>
