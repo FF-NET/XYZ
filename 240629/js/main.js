@@ -37,18 +37,7 @@ class Main {
         const loadingSpinnerImage = document.createElement("div");
         loadingSpinner.id = "loadingSpinner";
         loadingSpinnerImage.id = "loadingSpinnerImage";
-    
-        // 텍스트 요소 생성 및 설정
-        const textElement = document.createElement("div");
-        textElement.textContent = "무음 모드를 해제해 주세요";
-        textElement.style.fontSize = "16px"; // 원하는 스타일을 설정하세요
-        textElement.style.color = "white"; // 텍스트 색상을 흰색으로 설정
-    
-        // loadingSpinner에 요소 추가
-        loadingSpinner.appendChild(textElement);
         loadingSpinner.appendChild(loadingSpinnerImage);
-        
-        // body에 loadingSpinner 추가
         document.body.appendChild(loadingSpinner);
     }
 
