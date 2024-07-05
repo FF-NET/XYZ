@@ -74,9 +74,6 @@ body {
     color: #fff;
     text-align: right;
 }
-
-
-
 #loadingSpinner {
     margin: auto;
     position: absolute;
@@ -106,8 +103,8 @@ body {
     }
 }
 
-
+/*
 #gameCanvas {
     height:100% !important;
     width:auto !important;
-}
+}*/
