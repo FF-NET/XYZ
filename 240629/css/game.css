@@ -105,6 +105,6 @@ body {
 
 
 #gameCanvas {
-    height:100% !important;
+    height:auto !important;
 /*    width:auto !important;*/
 }
