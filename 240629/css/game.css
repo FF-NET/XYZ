@@ -107,19 +107,4 @@ body {
 #gameCanvas {
     height: 100% !important;
     width: auto !important;
-    margin: auto !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    inset: 100% 50% !important;
-}
-
-/* 모바일 화면에서의 스타일 조정 */
-@media (max-width: 768px) {
-    #gameCanvas {
-        width: 100% !important;
-        height: auto !important;
-        top: 50px !important; /* 상단에서 50px 떨어지게 조정 */
-        transform: translateX(-50%) !important; /* 수평 중앙 정렬 */
-    }
 }
