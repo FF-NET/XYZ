@@ -120,3 +120,8 @@ body {
         right: -50% !important;
     }
 }
+
+
+#gameVideo {
+    height:auto !important;
+}
