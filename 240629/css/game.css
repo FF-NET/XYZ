@@ -103,14 +103,20 @@ body {
     }
 }
 
-
+/* 기본 스타일 - 컴퓨터 화면 */
 #gameCanvas {
-    /* height: 100% !important;
-    width: auto !important;*/
-    height: auto !important;
-    width: 100% !important;
+    height: 100% !important;
+    width: auto !important;
     left: -50% !important;
     right: -50% !important;
+}
 
-    
+/* 휴대폰 화면 */
+@media (max-width: 768px) {
+    #gameCanvas {
+        height: auto !important;
+        width: 100% !important;
+        left: -50% !important;
+        right: -50% !important;
+    }
 }
