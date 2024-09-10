@@ -3089,12 +3089,54 @@ Sprite_Destination.prototype.update = function() {
 Sprite_Destination.prototype.createBitmap = function() {
     const tileWidth = $gameMap.tileWidth();
     const tileHeight = $gameMap.tileHeight();
-    this.bitmap = new Bitmap(tileWidth, tileHeight);
-    this.bitmap.fillAll("white");
+    const width = tileWidth * 0.75;  // 사각형 크기를 타일 크기의 75%로 설정
+    const height = tileHeight * 0.75;
+    const radius = 6;  // 둥글린 모서리의 반지름
+
+    this.bitmap = new Bitmap(width, height);
+
+    // 배경 색상을 설정 (투명한 배경을 위해서는 clearRect로 초기화)
+    this.bitmap.fillAll('rgba(0, 0, 0, 0)');
+
+    // 둥근 사각형 그리기
+    this.bitmap.context.beginPath();
+    this.bitmap.context.moveTo(radius, 0);
+    this.bitmap.context.lineTo(width - radius, 0);
+    this.bitmap.context.quadraticCurveTo(width, 0, width, radius);
+    this.bitmap.context.lineTo(width, height - radius);
+    this.bitmap.context.quadraticCurveTo(width, height, width - radius, height);
+    this.bitmap.context.lineTo(radius, height);
+    this.bitmap.context.quadraticCurveTo(0, height, 0, height - radius);
+    this.bitmap.context.lineTo(0, radius);
+    this.bitmap.context.quadraticCurveTo(0, 0, radius, 0);
+    this.bitmap.context.closePath();
+
+    // 앨리어싱된 스타일로 외곽선을 그림 (부드러운 느낌을 위해)
+    this.bitmap.context.strokeStyle = 'rgba(255, 255, 255, 0.7)';  // 흰색 반투명 외곽선
+    this.bitmap.context.lineWidth = 2;  // 외곽선 두께
+    this.bitmap.context.stroke();
+
+    // 내부 채우기 (XP 스타일 느낌의 연한 색상)
+    this.bitmap.context.fillStyle = 'rgba(255, 255, 255, 0.2)';  // 연한 흰색
+    this.bitmap.context.fill();
+
+    // 앵커를 중앙으로 설정
     this.anchor.x = 0.5;
     this.anchor.y = 0.5;
-    this.blendMode = 1;
 };
+
+Sprite_Destination.prototype.updatePosition = function() {
+    const tileWidth = $gameMap.tileWidth();
+    const tileHeight = $gameMap.tileHeight();
+    const x = $gameTemp.destinationX();
+    const y = $gameTemp.destinationY();
+
+    // 앵커가 중앙이므로 보정 불필요
+    this.x = ($gameMap.adjustX(x) + 0.5) * tileWidth;
+    this.y = ($gameMap.adjustY(y) + 0.5) * tileHeight;
+};
+
+
 
 Sprite_Destination.prototype.updatePosition = function() {
     const tileWidth = $gameMap.tileWidth();
